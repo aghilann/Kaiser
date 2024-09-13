@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: Build and Push Docker Image to AWS ECR
 
 on:
   push:
@@ -12,10 +12,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Login to DockerHub
-        uses: docker/login-action@v2
+      - name: Login to AWS ECR
+        uses: aws-actions/login@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Build and push Docker image
         run: |
           cd go
-          docker build -t my-go-api .
+          docker build -t kaiser-go-api .
+          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
+          docker tag kaiser-go-api ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/my-go-api:latest
+          docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/my-go-api:latest
