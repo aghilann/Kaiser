@@ -1,0 +1,2132 @@
+Job: preprocess-data-724f8, Pod: preprocess-data-724f8-mn5wl
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '5cbeb994-8008-4be2-af2b-fcc5a2e73a68', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:29:14 GMT', 'Content-Length': '213'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"preprocess-data\" in pod \"preprocess-data-724f8-mn5wl\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: add-424b8, Pod: add-424b8-78ndm
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'd42d5dcc-d1b0-43cb-984d-5d6d1dfe3bb7', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:40:30 GMT', 'Content-Length': '189'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"add\" in pod \"add-424b8-78ndm\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: train-model-44a89, Pod: train-model-44a89-dbbqm
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '7b4a61bf-efdb-44ab-97d8-3375d2c9de73', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:41:00 GMT', 'Content-Length': '205'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"train-model\" in pod \"train-model-44a89-dbbqm\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: train-model-d0c4e, Pod: train-model-d0c4e-gfpb5
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'b4a7d7d0-a093-4f5f-8c93-ca1128b293ce', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:42:23 GMT', 'Content-Length': '205'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"train-model\" in pod \"train-model-d0c4e-gfpb5\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: evaluate-model-6a8bc, Pod: evaluate-model-6a8bc-s4d7x
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '1977ce6c-5d8d-4bfc-be2d-29d960deb89a', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:42:53 GMT', 'Content-Length': '211'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"evaluate-model\" in pod \"evaluate-model-6a8bc-s4d7x\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: split-data-cca8a, Pod: split-data-cca8a-4qbvh
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'ee10f225-968e-45ed-a801-586036c57e12', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:43:23 GMT', 'Content-Length': '203'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"split-data\" in pod \"split-data-cca8a-4qbvh\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: preprocess-data-9b6d5, Pod: preprocess-data-9b6d5-dfkg8
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '8d4c882f-682e-4143-980c-a4f58a4beeab', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:44:23 GMT', 'Content-Length': '213'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"preprocess-data\" in pod \"preprocess-data-9b6d5-dfkg8\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: train-model-cdd5a, Pod: train-model-cdd5a-8g8dn
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'b970faa5-4c79-4307-9514-966d5c0ba0a0', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:46:41 GMT', 'Content-Length': '205'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"train-model\" in pod \"train-model-cdd5a-8g8dn\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: evaluate-model-8170e, Pod: evaluate-model-8170e-qlwzx
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '58e0dacc-f313-4c28-a813-a237fc14731e', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:47:10 GMT', 'Content-Length': '211'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"evaluate-model\" in pod \"evaluate-model-8170e-qlwzx\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: split-data-61391, Pod: split-data-61391-569fv
+Failure Reason: Failed to start container
+Logs:
+(400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Audit-Id': '499122ed-f138-4714-bfb5-d688d4a84234', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'Date': 'Sun, 15 Sep 2024 07:47:37 GMT', 'Content-Length': '203'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"previous terminated container \"split-data\" in pod \"split-data-61391-569fv\" not found","reason":"BadRequest","code":400}
+
+
+================================================================================
+Job: train-model-e669a, Pod: train-model-e669a-bclr2
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 9.5 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 7.9 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 5.6 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 7.4 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 10.3 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('9eb8dae2-d620-46c0-9a41-1a6fbce62d1e', 'X_train')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /9eb8dae2-d620-46c0-9a41-1a6fbce62d1e/X_train, request_id: 17F55B704F0EA491, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 9eb8dae2-d620-46c0-9a41-1a6fbce62d1e, object_name: X_train
+
+================================================================================
+Job: preprocess-data-4b13f, Pod: preprocess-data-4b13f-r4vb2
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 3.7 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 3.6 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 3.6 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 4.4 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 10.0 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 36, in <module>
+    response = minio_client.get_object('9eb8dae2-d620-46c0-9a41-1a6fbce62d1e', 'data')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /9eb8dae2-d620-46c0-9a41-1a6fbce62d1e/data, request_id: 17F55BCC3361E23E, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 9eb8dae2-d620-46c0-9a41-1a6fbce62d1e, object_name: data
+
+================================================================================
+Job: train-model-d2575, Pod: train-model-d2575-sfwq8
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 3.8 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 5.1 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 5.8 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 6.5 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 6.6 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('9eb8dae2-d620-46c0-9a41-1a6fbce62d1e', 'X_train')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /9eb8dae2-d620-46c0-9a41-1a6fbce62d1e/X_train, request_id: 17F55BD39D25A76D, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 9eb8dae2-d620-46c0-9a41-1a6fbce62d1e, object_name: X_train
+
+================================================================================
+Job: preprocess-data-709e4, Pod: preprocess-data-709e4-5slrz
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 3.2 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 2.9 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 6.2 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 9.7 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 9.1 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 36, in <module>
+    response = minio_client.get_object('9eb8dae2-d620-46c0-9a41-1a6fbce62d1e', 'data')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /9eb8dae2-d620-46c0-9a41-1a6fbce62d1e/data, request_id: 17F55BDEE8EC21CC, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 9eb8dae2-d620-46c0-9a41-1a6fbce62d1e, object_name: data
+
+================================================================================
+Job: train-model-60220, Pod: train-model-60220-z5d2r
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 6.9 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 7.0 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 7.0 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 6.1 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 6.1 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('9eb8dae2-d620-46c0-9a41-1a6fbce62d1e', 'X_train')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /9eb8dae2-d620-46c0-9a41-1a6fbce62d1e/X_train, request_id: 17F55BE52263B6BA, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 9eb8dae2-d620-46c0-9a41-1a6fbce62d1e, object_name: X_train
+
+================================================================================
+Job: evaluate-model-501cc, Pod: evaluate-model-501cc-hsgwl
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 10.4 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 9.9 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 10.6 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 11.3 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 10.4 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 35, in <module>
+    response = minio_client.get_object('9eb8dae2-d620-46c0-9a41-1a6fbce62d1e', 'model')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /9eb8dae2-d620-46c0-9a41-1a6fbce62d1e/model, request_id: 17F55BEA28F8F000, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 9eb8dae2-d620-46c0-9a41-1a6fbce62d1e, object_name: model
+
+================================================================================
+Job: preprocess-data-83c12, Pod: preprocess-data-83c12-xj8k5
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 7.0 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 6.3 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 6.4 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 6.6 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 6.7 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 36, in <module>
+    response = minio_client.get_object('9eb8dae2-d620-46c0-9a41-1a6fbce62d1e', 'data')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /9eb8dae2-d620-46c0-9a41-1a6fbce62d1e/data, request_id: 17F55BF92A0A58C2, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 9eb8dae2-d620-46c0-9a41-1a6fbce62d1e, object_name: data
+
+================================================================================
+Job: preprocess-data-a3f6f, Pod: preprocess-data-a3f6f-fn6nn
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 8.9 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 9.8 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 10.8 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.6 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 11.3 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 37, in <module>
+Args: 'data'
+    response = minio_client.get_object('278165a2-f38c-407c-91a5-2481d775bb22', 'data')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /278165a2-f38c-407c-91a5-2481d775bb22/data, request_id: 17F55C608E152DD7, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 278165a2-f38c-407c-91a5-2481d775bb22, object_name: data
+
+================================================================================
+Job: split-data-6dc00, Pod: split-data-6dc00-thfd6
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 10.4 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 11.1 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 11.3 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.9 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 11.1 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Args: 'X'
+Traceback (most recent call last):
+  File "/app/task.py", line 35, in <module>
+    response = minio_client.get_object('278165a2-f38c-407c-91a5-2481d775bb22', 'X')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /278165a2-f38c-407c-91a5-2481d775bb22/X, request_id: 17F55C66463D26AE, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 278165a2-f38c-407c-91a5-2481d775bb22, object_name: X
+
+================================================================================
+Job: train-model-9796c, Pod: train-model-9796c-lkvq5
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 10.6 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 11.0 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 10.5 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.3 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 11.2 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 35, in <module>
+Args: 'X_train'
+    response = minio_client.get_object('278165a2-f38c-407c-91a5-2481d775bb22', 'X_train')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /278165a2-f38c-407c-91a5-2481d775bb22/X_train, request_id: 17F55C6C0C5C42B5, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 278165a2-f38c-407c-91a5-2481d775bb22, object_name: X_train
+
+================================================================================
+Job: evaluate-model-43430, Pod: evaluate-model-43430-d6w92
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 9.1 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 9.6 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 9.2 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 8.7 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 2.0 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 36, in <module>
+Args: 'model'
+    response = minio_client.get_object('278165a2-f38c-407c-91a5-2481d775bb22', 'model')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /278165a2-f38c-407c-91a5-2481d775bb22/model, request_id: 17F55C720A59944C, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 278165a2-f38c-407c-91a5-2481d775bb22, object_name: model
+
+================================================================================
+Job: preprocess-data-7d539, Pod: preprocess-data-7d539-slfsq
+Failure Reason: Job failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 10.6 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 11.1 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 11.2 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.5 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 9.9 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 37, in <module>
+Args: 'data'
+    response = minio_client.get_object('278165a2-f38c-407c-91a5-2481d775bb22', 'data')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /278165a2-f38c-407c-91a5-2481d775bb22/data, request_id: 17F55C7FD3C70A0D, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 278165a2-f38c-407c-91a5-2481d775bb22, object_name: data
+
+================================================================================
+Job: split-data-c2b81, Pod: split-data-c2b81-z8b48
+Failure Reason: Job failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 9.9 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 10.5 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 11.0 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.9 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 11.2 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('d862f2ad-c73b-48e0-9f3f-c9503041266b', 'X_scaled')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /d862f2ad-c73b-48e0-9f3f-c9503041266b/X_scaled, request_id: 17F55CBD7E81D135, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: d862f2ad-c73b-48e0-9f3f-c9503041266b, object_name: X_scaled
+
+================================================================================
+Job: train-model-3752f, Pod: train-model-3752f-dbmth
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 10.5 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 10.6 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 10.6 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.4 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 10.2 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('d862f2ad-c73b-48e0-9f3f-c9503041266b', 'X_train')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /d862f2ad-c73b-48e0-9f3f-c9503041266b/X_train, request_id: 17F55CC346B18C9A, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: d862f2ad-c73b-48e0-9f3f-c9503041266b, object_name: X_train
+
+================================================================================
+Job: evaluate-model-7bffc, Pod: evaluate-model-7bffc-mmmzx
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 10.8 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 10.8 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 11.5 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.5 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 9.9 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 35, in <module>
+    response = minio_client.get_object('d862f2ad-c73b-48e0-9f3f-c9503041266b', 'model')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /d862f2ad-c73b-48e0-9f3f-c9503041266b/model, request_id: 17F55CC8BD3C3769, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: d862f2ad-c73b-48e0-9f3f-c9503041266b, object_name: model
+
+================================================================================
+Job: split-data-1c6ab, Pod: split-data-1c6ab-znx6s
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 7.6 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 5.7 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 8.0 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 6.6 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 7.3 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('d862f2ad-c73b-48e0-9f3f-c9503041266b', 'X_scaled')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /d862f2ad-c73b-48e0-9f3f-c9503041266b/X_scaled, request_id: 17F55CEA72D3A65F, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: d862f2ad-c73b-48e0-9f3f-c9503041266b, object_name: X_scaled
+
+================================================================================
+Job: train-model-9fd6b, Pod: train-model-9fd6b-nrqlh
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 10.4 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 9.5 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 11.1 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 9.7 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 10.4 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('d862f2ad-c73b-48e0-9f3f-c9503041266b', 'X_train')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /d862f2ad-c73b-48e0-9f3f-c9503041266b/X_train, request_id: 17F55CEFBD251F98, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: d862f2ad-c73b-48e0-9f3f-c9503041266b, object_name: X_train
+
+================================================================================
+Job: load-data-e9fdc, Pod: load-data-e9fdc-qp4f2
+Failure Reason: Success
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 6.6 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 9.0 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 8.4 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 8.4 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 9.8 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[(1.0, 2.0), (2.0, 4.0), (3.0, 6.0), (4.0, 8.0), (5.0, 10.0)]
+
+================================================================================
+Job: preprocess-data-d90f4, Pod: preprocess-data-d90f4-pqnx4
+Failure Reason: Success
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 9.5 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 10.9 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 10.7 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 7.6 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 8.9 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Loaded argument 'data'
+
+================================================================================
+Job: split-data-47017, Pod: split-data-47017-rkfl7
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 10.2 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 10.9 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 8.2 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 9.2 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 10.2 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('d862f2ad-c73b-48e0-9f3f-c9503041266b', 'X_scaled')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /d862f2ad-c73b-48e0-9f3f-c9503041266b/X_scaled, request_id: 17F55D06D0445560, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: d862f2ad-c73b-48e0-9f3f-c9503041266b, object_name: X_scaled
+
+================================================================================
+Job: train-model-36444, Pod: train-model-36444-7g98k
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 9.5 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 10.8 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 10.0 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.3 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 10.9 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('d862f2ad-c73b-48e0-9f3f-c9503041266b', 'X_train')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /d862f2ad-c73b-48e0-9f3f-c9503041266b/X_train, request_id: 17F55D0BD2D98A52, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: d862f2ad-c73b-48e0-9f3f-c9503041266b, object_name: X_train
+
+================================================================================
+Job: evaluate-model-dd379, Pod: evaluate-model-dd379-fxgds
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 9.6 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 10.3 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 10.2 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.2 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 11.4 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 35, in <module>
+    response = minio_client.get_object('d862f2ad-c73b-48e0-9f3f-c9503041266b', 'model')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /d862f2ad-c73b-48e0-9f3f-c9503041266b/model, request_id: 17F55D10FDE19099, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: d862f2ad-c73b-48e0-9f3f-c9503041266b, object_name: model
+
+================================================================================
+Job: load-data-cddc3, Pod: load-data-cddc3-kvprh
+Failure Reason: Success
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 7.3 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 11.7 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 11.6 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 11.7 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 12.0 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[(1.0, 2.0), (2.0, 4.0), (3.0, 6.0), (4.0, 8.0), (5.0, 10.0)]
+
+================================================================================
+Job: preprocess-data-61e63, Pod: preprocess-data-61e63-5fgjs
+Failure Reason: Success
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 11.2 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 11.7 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 11.4 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 11.3 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 11.2 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Loaded argument 'data'
+
+================================================================================
+Job: split-data-95692, Pod: split-data-95692-vv5jb
+Failure Reason: Pod failed
+Logs:
+Collecting scikit-learn
+  Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (13 kB)
+Collecting pandas
+  Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (19 kB)
+Collecting numpy
+  Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (62 kB)
+Collecting joblib
+  Downloading joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting minio
+  Downloading minio-7.2.8-py3-none-any.whl.metadata (6.5 kB)
+Collecting scipy>=1.6.0 (from scikit-learn)
+  Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (113 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Downloading threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Downloading pytz-2024.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting certifi (from minio)
+  Downloading certifi-2024.8.30-py3-none-any.whl.metadata (2.2 kB)
+Collecting urllib3 (from minio)
+  Downloading urllib3-2.2.3-py3-none-any.whl.metadata (6.5 kB)
+Collecting argon2-cffi (from minio)
+  Downloading argon2_cffi-23.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting pycryptodome (from minio)
+  Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (3.4 kB)
+Collecting typing-extensions (from minio)
+  Downloading typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting argon2-cffi-bindings (from argon2-cffi->minio)
+  Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.7 kB)
+Collecting cffi>=1.0.1 (from argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (1.5 kB)
+Collecting pycparser (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->minio)
+  Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+Downloading scikit_learn-1.5.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (12.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 6.2 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (15.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 9.0 MB/s eta 0:00:00
+Downloading numpy-2.1.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (13.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.7/13.7 MB 10.2 MB/s eta 0:00:00
+Downloading joblib-1.4.2-py3-none-any.whl (301 kB)
+Downloading minio-7.2.8-py3-none-any.whl (93 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2024.2-py2.py3-none-any.whl (508 kB)
+Downloading scipy-1.14.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 10.2 MB/s eta 0:00:00
+Downloading threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+Downloading argon2_cffi-23.1.0-py3-none-any.whl (15 kB)
+Downloading certifi-2024.8.30-py3-none-any.whl (167 kB)
+Downloading pycryptodome-3.20.0-cp35-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 11.0 MB/s eta 0:00:00
+Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Downloading urllib3-2.2.3-py3-none-any.whl (126 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Downloading argon2_cffi_bindings-21.2.0-cp36-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (80 kB)
+Downloading cffi-1.17.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (478 kB)
+Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+Installing collected packages: pytz, urllib3, tzdata, typing-extensions, threadpoolctl, six, pycryptodome, pycparser, numpy, joblib, certifi, scipy, python-dateutil, cffi, scikit-learn, pandas, argon2-cffi-bindings, argon2-cffi, minio
+Successfully installed argon2-cffi-23.1.0 argon2-cffi-bindings-21.2.0 certifi-2024.8.30 cffi-1.17.1 joblib-1.4.2 minio-7.2.8 numpy-2.1.1 pandas-2.2.2 pycparser-2.22 pycryptodome-3.20.0 python-dateutil-2.9.0.post0 pytz-2024.2 scikit-learn-1.5.2 scipy-1.14.1 six-1.16.0 threadpoolctl-3.5.0 typing-extensions-4.12.2 tzdata-2024.1 urllib3-2.2.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Traceback (most recent call last):
+  File "/app/task.py", line 34, in <module>
+    response = minio_client.get_object('52f10f60-522f-4e78-86db-e385daa4a79d', 'X_scaled')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 1244, in get_object
+    return self._execute(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 440, in _execute
+    return self._url_open(
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/minio/api.py", line 423, in _url_open
+    raise response_error
+minio.error.S3Error: S3 operation failed; code: NoSuchKey, message: The specified key does not exist., resource: /52f10f60-522f-4e78-86db-e385daa4a79d/X_scaled, request_id: 17F55DF4F5BB1A3D, host_id: dd9025bab4ad464b049177c95eb6ebf374d3b3fd1af9251148b658df7ac2e3e8, bucket_name: 52f10f60-522f-4e78-86db-e385daa4a79d, object_name: X_scaled
+
+================================================================================

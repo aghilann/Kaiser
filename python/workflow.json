@@ -1,0 +1,80 @@
+{
+  "workflow": {
+    "name": "simple_data_processing_workflow",
+    "tasks": [
+      {
+        "task": "load_data",
+        "outputs": ["data"],
+        "inputs": []
+      },
+      {
+        "task": "preprocess_data",
+        "outputs": [],
+        "inputs": [["data", false]]
+      },
+      {
+        "task": "split_data",
+        "outputs": [],
+        "inputs": [
+          ["X_scaled", false],
+          ["y", false]
+        ]
+      },
+      {
+        "task": "train_model",
+        "outputs": ["model"],
+        "inputs": [
+          ["X_train", false],
+          ["y_train", false]
+        ]
+      },
+      {
+        "task": "evaluate_model",
+        "outputs": ["mse"],
+        "inputs": [
+          ["model", false],
+          ["X_test", false],
+          ["y_test", false]
+        ]
+      }
+    ]
+  },
+  "tasks": {
+    "load_data": {
+      "name": "load_data",
+      "code": "def load_data() -> List[Tuple[float, float]]:\n    # Simulate loading data: A list of tuples with (input, output) values\n    data = [\n        (1.0, 2.0),\n        (2.0, 4.0),\n        (3.0, 6.0),\n        (4.0, 8.0),\n        (5.0, 10.0),\n    ]\n    return data",
+      "inputs": [],
+      "outputs": ["data"],
+      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n\n# Call the function\nresult = load_data()\n# Store the result(s)\ndata = result\n# Serialize and store the result\ndata_stream, length, content_type = serialize_data(data)\nminio_client.put_object('{execution_id}', 'data', data_stream, length, content_type=content_type)\nprint(data)"
+    },
+    "preprocess_data": {
+      "name": "preprocess_data",
+      "code": "def preprocess_data(data: List[Tuple[float, float]]) -> Tuple[List[float], List[float]]:\n    # Preprocess the data: Separate inputs (X) and outputs (y)\n    X = [x for x, _ in data]\n    y = [y for _, y in data]\n    # Basic normalization (scaling) - dividing by the max value\n    max_value = max(X)\n    X_scaled = [x / max_value for x in X]\n    return X_scaled, y",
+      "inputs": ["data"],
+      "outputs": [],
+      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: data\nresponse = minio_client.get_object('{execution_id}', 'data')\ndata_bytes = response.read()\ndata = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'data'\")\n# Call the function\nresult = preprocess_data(data)\n# Store the result(s)\n"
+    },
+    "split_data": {
+      "name": "split_data",
+      "code": "def split_data(X: List[float], y: List[float]) -> Tuple[List[float], List[float], List[float], List[float]]:\n    # Split data into train/test sets (80/20 split)\n    split_index = int(len(X) * 0.8)\n    X_train, X_test = X[:split_index], X[split_index:]\n    y_train, y_test = y[:split_index], y[split_index:]\n    return X_train, X_test, y_train, y_test",
+      "inputs": ["X", "y"],
+      "outputs": [],
+      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: X_scaled\nresponse = minio_client.get_object('{execution_id}', 'X_scaled')\ndata_bytes = response.read()\nX_scaled = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'X_scaled'\")\n# Retrieve argument: y\nresponse = minio_client.get_object('{execution_id}', 'y')\ndata_bytes = response.read()\ny = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'y'\")\n# Call the function\nresult = split_data(X_scaled, y)\n# Store the result(s)\n"
+    },
+    "train_model": {
+      "name": "train_model",
+      "code": "def train_model(X_train: List[float], y_train: List[float]) -> Tuple[float, float]:\n    # Train a simple linear model: y = a * x + b\n    # For simplicity, assume b = 0, so y = a * x\n    # Calculate 'a' as the ratio of mean of y to mean of X\n    a = sum(y_train) / sum(X_train) if sum(X_train) != 0 else 0\n    return a, 0",
+      "inputs": ["X_train", "y_train"],
+      "outputs": ["model"],
+      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: X_train\nresponse = minio_client.get_object('{execution_id}', 'X_train')\ndata_bytes = response.read()\nX_train = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'X_train'\")\n# Retrieve argument: y_train\nresponse = minio_client.get_object('{execution_id}', 'y_train')\ndata_bytes = response.read()\ny_train = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'y_train'\")\n# Call the function\nresult = train_model(X_train, y_train)\n# Store the result(s)\nmodel = result\n# Serialize and store the result\ndata_stream, length, content_type = serialize_data(model)\nminio_client.put_object('{execution_id}', 'model', data_stream, length, content_type=content_type)\nprint(model)"
+    },
+    "evaluate_model": {
+      "name": "evaluate_model",
+      "code": "def evaluate_model(model: Tuple[float, float], X_test: List[float], y_test: List[float]) -> float:\n    # Evaluate the model: calculate mean squared error\n    a, b = model\n    y_pred = [a * x + b for x in X_test]\n    mse = sum((y_true - y_pred) ** 2 for y_true, y_pred in zip(y_test, y_pred)) / len(y_test)\n    print(f\"Mean Squared Error: {mse}\")\n    return mse",
+      "inputs": ["model", "X_test", "y_test"],
+      "outputs": ["mse"],
+      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: model\nresponse = minio_client.get_object('{execution_id}', 'model')\ndata_bytes = response.read()\nmodel = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'model'\")\n# Retrieve argument: X_test\nresponse = minio_client.get_object('{execution_id}', 'X_test')\ndata_bytes = response.read()\nX_test = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'X_test'\")\n# Retrieve argument: y_test\nresponse = minio_client.get_object('{execution_id}', 'y_test')\ndata_bytes = response.read()\ny_test = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'y_test'\")\n# Call the function\nresult = evaluate_model(model, X_test, y_test)\n# Store the result(s)\nmse = result\n# Serialize and store the result\ndata_stream, length, content_type = serialize_data(mse)\nminio_client.put_object('{execution_id}', 'mse', data_stream, length, content_type=content_type)\nprint(mse)"
+    }
+  },
+  "execution_id": "52f10f60-522f-4e78-86db-e385daa4a79d"
+}
