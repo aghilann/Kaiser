@@ -27,7 +27,32 @@ class WorkflowSerializer(ast.NodeVisitor):
         self.current_workflow = None
         self.task_order = []
         self.imports = []
+        self.top_level_definitions = []
         self.execution_id = uuid.uuid4()
+
+    def visit_Module(self, node):
+        # Process the module's body, which is the list of top-level statements
+        for stmt in node.body:
+            if isinstance(stmt, (ast.Import, ast.ImportFrom)):
+                self.visit(stmt)  # Existing code handles imports
+            elif isinstance(stmt, ast.FunctionDef):
+                self.visit(stmt)  # Existing code handles functions
+            elif isinstance(stmt, ast.ClassDef):
+                # Collect class definitions
+                class_code = ast.get_source_segment(self.source_code, stmt)
+                self.top_level_definitions.append(class_code)
+            elif isinstance(stmt, ast.Assign):
+                # Collect top-level assignments
+                assign_code = ast.get_source_segment(self.source_code, stmt)
+                self.top_level_definitions.append(assign_code)
+            elif isinstance(stmt, ast.Expr):
+                # Collect top-level expressions (e.g., docstrings or print statements)
+                expr_code = ast.get_source_segment(self.source_code, stmt)
+                self.top_level_definitions.append(expr_code)
+            else:
+                # Handle other top-level statements if needed
+                stmt_code = ast.get_source_segment(self.source_code, stmt)
+                self.top_level_definitions.append(stmt_code)
 
     def visit_Import(self, node):
         self.imports.append(ast.get_source_segment(self.source_code, node))
@@ -74,6 +99,11 @@ class WorkflowSerializer(ast.NodeVisitor):
             self.current_workflow = node.name
             # Parse the workflow body
             self.parse_workflow_body(node.body)
+        else:
+            # Collect other top-level function definitions
+            function_code = ast.get_source_segment(self.source_code, node)
+            self.top_level_definitions.append(function_code)
+
         self.generic_visit(node)
 
     def parse_workflow_body(self, body):
@@ -172,7 +202,7 @@ response = minio_client.get_object('{self.execution_id}', '{arg_name}')
 data_bytes = response.read()
 {arg_name} = deserialize_data(data_bytes)
 print(f"Loaded argument '{arg_name}'")
-                """
+                    """
                 arg_loading_code.append(code_line.strip())
                 args_list.append(arg_name)
 
@@ -191,7 +221,7 @@ print(f"Loaded argument '{arg_name}'")
 data_stream, length, content_type = serialize_data({output_var})
 minio_client.put_object('{self.execution_id}', '{output_var}', data_stream, length, content_type=content_type)
 print({output_var})
-                """.strip())
+                    """.strip())
             else:
                 # Multiple outputs
                 outputs_str = ', '.join(outputs)
@@ -202,7 +232,7 @@ print({output_var})
 data_stream, length, content_type = serialize_data({output_var})
 minio_client.put_object('{self.execution_id}', '{output_var}', data_stream, length, content_type=content_type)
 print({output_var})
-                    """.strip())
+                        """.strip())
 
         # Combine all code components
         code_lines = [
@@ -247,6 +277,7 @@ print({output_var})
             },
             'tasks': self.tasks,
             'imports': self.imports,
+            'top_level_definitions': self.top_level_definitions,
             'execution_id': str(self.execution_id),
         }
         return workflow_json

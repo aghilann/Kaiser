@@ -5,6 +5,19 @@ from torch.utils.data import DataLoader
 from torchvision import datasets
 from typing import Dict, Tuple, List
 
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.fc1 = nn.Linear(28 * 28, 128)
+        self.fc2 = nn.Linear(128, 64)
+        self.fc3 = nn.Linear(64, 10)
+
+    def forward(self, x):
+        x = x.view(-1, 28 * 28)
+        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc2(x))
+        return self.fc3(x)
+
 def task(container_image: str = None):
     def decorator(func):
         func.container_image = container_image
@@ -40,20 +53,7 @@ def preprocess_data(dataset: datasets.MNIST) -> Tuple[DataLoader, DataLoader]:
     return train_loader, test_loader
 
 @task(container_image="intel/deep-learning:2024.2-py3.10")
-def train_model(train_loader: DataLoader) -> Dict[str, torch.Tensor]:
-    class Net(nn.Module):
-        def __init__(self):
-            super(Net, self).__init__()
-            self.fc1 = nn.Linear(28 * 28, 128)
-            self.fc2 = nn.Linear(128, 64)
-            self.fc3 = nn.Linear(64, 10)
-
-        def forward(self, x):
-            x = x.view(-1, 28 * 28)
-            x = torch.relu(self.fc1(x))
-            x = torch.relu(self.fc2(x))
-            return self.fc3(x)
-    
+def train_model(train_loader: DataLoader) -> Net:
     model = Net()
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.5)
@@ -70,25 +70,10 @@ def train_model(train_loader: DataLoader) -> Dict[str, torch.Tensor]:
                 print(f'Epoch {epoch}: [{batch_idx * len(data)}/{len(train_loader.dataset)}]'
                       f'\tLoss: {loss.item():.6f}')
 
-    return model.state_dict()
+    return model
 
 @task(container_image="intel/deep-learning:2024.2-py3.10")
-def evaluate_model(state_dict: Dict[str, torch.Tensor], test_loader: DataLoader) -> float:
-    class Net(nn.Module):
-        def __init__(self):
-            super(Net, self).__init__()
-            self.fc1 = nn.Linear(28 * 28, 128)
-            self.fc2 = nn.Linear(128, 64)
-            self.fc3 = nn.Linear(64, 10)
-
-        def forward(self, x):
-            x = x.view(-1, 28 * 28)
-            x = torch.relu(self.fc1(x))
-            x = torch.relu(self.fc2(x))
-            return self.fc3(x)
-    
-    model = Net()
-    model.load_state_dict(state_dict)  # Load the trained parameters
+def evaluate_model(model: Net, test_loader: DataLoader) -> float:
     test_loss = 0
     correct = 0
     with torch.no_grad():
@@ -110,6 +95,3 @@ def mnist_workflow() -> None:
     train_loader, test_loader = preprocess_data(dataset)
     model = train_model(train_loader)
     accuracy = evaluate_model(model, test_loader)
-
-if __name__ == "__main__":
-    mnist_workflow()

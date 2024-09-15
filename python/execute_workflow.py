@@ -42,7 +42,7 @@ def sanitize_name(name):
     # Replace underscores with hyphens and ensure compliance with RFC 1123
     return name.lower().replace('_', '-')
 
-def create_job(task_name, task_spec, execution_id, all_task_codes, imports):
+def create_job(task_name, task_spec, execution_id, all_task_codes, imports, top_level_definitions):
     job_name = f"{sanitize_name(task_name)}-{str(uuid.uuid4())[:5]}"
     container_name = sanitize_name(task_name)
     metadata = client.V1ObjectMeta(name=job_name, namespace=NAMESPACE)
@@ -56,10 +56,12 @@ def create_job(task_name, task_spec, execution_id, all_task_codes, imports):
 
     # Combine imports
     imports_code = '\n'.join(imports)
+    top_level_definitions_code = '\n'.join(top_level_definitions)
 
     # Construct the task script
     task_script = f"""
 {imports_code}
+{top_level_definitions_code}
 {all_task_codes}
 {code_to_execute}
 """
@@ -223,6 +225,7 @@ def main():
     workflow = workflow_json['workflow']
     tasks = workflow_json['tasks']
     imports = workflow_json.get('imports', [])
+    top_level_definitions = workflow_json.get('top_level_definitions', [])
     execution_id = workflow_json['execution_id']
 
     print(f"Starting execution of workflow '{workflow['name']}' with execution ID '{execution_id}'.")
@@ -240,7 +243,7 @@ def main():
         task_spec = tasks[task_name]
 
         # Create the Kubernetes Job
-        job_name = create_job(task_name, task_spec, execution_id, all_task_codes, imports)
+        job_name = create_job(task_name, task_spec, execution_id, all_task_codes, imports, top_level_definitions)
 
         time.sleep(10)
 
