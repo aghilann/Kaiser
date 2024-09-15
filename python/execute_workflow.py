@@ -1,9 +1,11 @@
+# execute_workflow.py
+
 import json
 import uuid
 import time
 from kubernetes import client, config
 from kubernetes.client.rest import ApiException
-from minio import Minio
+import base64
 
 # Load Kubernetes configuration
 config.load_kube_config()
@@ -20,9 +22,6 @@ MINIO_SERVICE = 'minio-service'
 MINIO_PORT = 9000
 MINIO_ACCESS_KEY = 'minio'
 MINIO_SECRET_KEY = 'minio123'
-
-# Docker image with Python
-DOCKER_IMAGE = 'python'  # Replace with a custom image if available
 
 def ensure_namespace_exists(namespace):
     try:
@@ -43,44 +42,47 @@ def sanitize_name(name):
     # Replace underscores with hyphens and ensure compliance with RFC 1123
     return name.lower().replace('_', '-')
 
-def create_job(task_name, task_spec, execution_id):
+def create_job(task_name, task_spec, execution_id, all_task_codes, imports):
     job_name = f"{sanitize_name(task_name)}-{str(uuid.uuid4())[:5]}"
     container_name = sanitize_name(task_name)
     metadata = client.V1ObjectMeta(name=job_name, namespace=NAMESPACE)
 
     # Prepare code without escaping quotes
-    task_code = task_spec['code']
     code_to_execute = task_spec['code_to_execute']
     code_to_execute = code_to_execute.replace('{execution_id}', execution_id)
     code_to_execute = code_to_execute.replace('minio-service:9000', f"{MINIO_SERVICE}:{MINIO_PORT}")
     code_to_execute = code_to_execute.replace("access_key='minio'", f"access_key='{MINIO_ACCESS_KEY}'")
     code_to_execute = code_to_execute.replace("secret_key='minio123'", f"secret_key='{MINIO_SECRET_KEY}'")
 
-    # Command to run in the container using a heredoc
-    command = [
-        'sh', '-c', f"""
-pip install --no-cache-dir scikit-learn pandas numpy joblib minio && \
-mkdir -p /app && \
-cat << 'EOF' > /app/task.py
-from typing import List, Tuple
-{task_code}
+    # Combine imports
+    imports_code = '\n'.join(imports)
+
+    # Construct the task script
+    task_script = f"""
+{imports_code}
+{all_task_codes}
 {code_to_execute}
-EOF
-python /app/task.py
 """
-    ]
 
-    # Define environment variables
-    env_vars = [
-        client.V1EnvVar(name='EXECUTION_ID', value=execution_id),
-    ]
+    # Encode the script in base64 to avoid issues with shell quoting
+    encoded_script = base64.b64encode(task_script.encode('utf-8')).decode('utf-8')
 
-    # Container spec
+    # Commands to execute inside the container
+    commands = f"""
+source activate pytorch-cpu && \
+echo '{encoded_script}' | base64 -d > /home/dev/task.py && \
+pip install --no-cache-dir minio && \
+python /home/dev/task.py
+"""
+
+    # Override the CMD to run our commands
     container = client.V1Container(
         name=container_name,
-        image=DOCKER_IMAGE,
-        command=command,
-        env=env_vars,
+        image=task_spec.get('container_image', 'intel/classical-ml:latest-py3.10'),
+        command=['bash', '-c', commands],
+        env=[
+            client.V1EnvVar(name='EXECUTION_ID', value=execution_id),
+        ],
         image_pull_policy='IfNotPresent',
     )
 
@@ -144,7 +146,7 @@ def wait_for_job(job_name):
             if job.status.succeeded == 1:
                 print(f"Job '{job_name}' completed successfully.")
                 logs = fetch_pod_logs(pod_name)
-                log_failure_details(job_name, pod_name, "Success", logs)
+                # log_failure_details(job_name, pod_name, "Success", logs)
                 break
             elif job.status.failed is not None and job.status.failed > 0:
                 print(f"Job '{job_name}' failed.")
@@ -208,8 +210,7 @@ def topological_sort(workflow):
     if any(len(dependencies[task]) > 0 for task in dependencies):
         raise Exception("Cyclic dependency detected")
 
-    return ["load_data", "preprocess_data", "split_data", "train_model", "evaluate_model"]  # Hardcoded for now,
-    return L
+    return L  # Return the computed task order
 
 def main():
     # Ensure the namespace exists
@@ -221,6 +222,7 @@ def main():
 
     workflow = workflow_json['workflow']
     tasks = workflow_json['tasks']
+    imports = workflow_json.get('imports', [])
     execution_id = workflow_json['execution_id']
 
     print(f"Starting execution of workflow '{workflow['name']}' with execution ID '{execution_id}'.")
@@ -230,12 +232,15 @@ def main():
 
     print("Task execution order:", task_order)
 
+    # Prepare all task codes
+    all_task_codes = '\n\n'.join(task['code'] for task in tasks.values())
+
     # Execute tasks in topological order
     for task_name in task_order:
         task_spec = tasks[task_name]
 
         # Create the Kubernetes Job
-        job_name = create_job(task_name, task_spec, execution_id)
+        job_name = create_job(task_name, task_spec, execution_id, all_task_codes, imports)
 
         time.sleep(10)
 

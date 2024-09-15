@@ -27,7 +27,6 @@ class WorkflowSerializer(ast.NodeVisitor):
         self.current_workflow = None
         self.task_order = []
         self.imports = []
-        self.global_defs = []
         self.execution_id = uuid.uuid4()
 
     def visit_Import(self, node):
@@ -38,61 +37,50 @@ class WorkflowSerializer(ast.NodeVisitor):
 
     def visit_FunctionDef(self, node):
         # Check if the function is decorated with @task or @workflow
-        decorators = [d.id if isinstance(d, ast.Name) else None for d in node.decorator_list]
-        if 'task' in decorators:
+        decorators = node.decorator_list
+        is_task = False
+        is_workflow = False
+        container_image = None
+
+        for decorator in decorators:
+            if isinstance(decorator, ast.Call):
+                if isinstance(decorator.func, ast.Name) and decorator.func.id == 'task':
+                    is_task = True
+                    # Extract arguments from decorator
+                    for kw in decorator.keywords:
+                        if kw.arg == 'container_image':
+                            container_image = kw.value.value  # For Python >= 3.8
+            elif isinstance(decorator, ast.Name):
+                if decorator.id == 'task':
+                    is_task = True
+                elif decorator.id == 'workflow':
+                    is_workflow = True
+
+        if is_task:
             # It's a task
             function_name = node.name
             function_code = ast.get_source_segment(self.source_code, node)
             args = [arg.arg for arg in node.args.args]
-            returns = self.get_return_annotation(node)
             # We will generate 'code_to_execute' later when we have outputs
             self.tasks[function_name] = {
                 'name': function_name,
                 'code': function_code,
                 'inputs': args,
-                'outputs': []  # Will be filled later
+                'outputs': [],  # Will be filled later
+                'container_image': container_image
             }
-        elif 'workflow' in decorators:
+        elif is_workflow:
             # It's a workflow
             self.current_workflow = node.name
             # Parse the workflow body
             self.parse_workflow_body(node.body)
         self.generic_visit(node)
 
-    def get_return_annotation(self, node):
-        if node.returns:
-            if isinstance(node.returns, ast.Name):
-                return [node.returns.id]
-            elif isinstance(node.returns, ast.Tuple):
-                return [self.get_annotation_name(elt) for elt in node.returns.elts]
-            else:
-                return [self.get_annotation_name(node.returns)]
-        else:
-            return []
-
-    def get_annotation_name(self, node):
-        if isinstance(node, ast.Name):
-            return node.id
-        elif isinstance(node, ast.Subscript):
-            # Handles cases like Tuple[np.ndarray, pd.Series]
-            value = self.get_annotation_name(node.value)
-            slice = self.get_annotation_name(node.slice)
-            return f"{value}[{slice}]"
-        elif isinstance(node, ast.Index):
-            return self.get_annotation_name(node.value)
-        elif isinstance(node, ast.Attribute):
-            value = self.get_annotation_name(node.value)
-            return f"{value}.{node.attr}"
-        elif isinstance(node, ast.Tuple):
-            return ', '.join([self.get_annotation_name(elt) for elt in node.elts])
-        else:
-            return ast.dump(node)
-
     def parse_workflow_body(self, body):
         for stmt in body:
             if isinstance(stmt, ast.Assign):
-                # e.g., df = load_data()
-                targets = [t.id for t in stmt.targets if isinstance(t, ast.Name)]
+                # e.g., X, y = load_data()
+                targets = self.extract_targets(stmt.targets)
                 if isinstance(stmt.value, ast.Call):
                     func_name = self.get_func_name(stmt.value.func)
                     if func_name in self.tasks:
@@ -102,7 +90,7 @@ class WorkflowSerializer(ast.NodeVisitor):
                             'inputs': self.get_call_args(stmt.value)
                         })
             elif isinstance(stmt, ast.Expr):
-                # e.g., add(1, 2)
+                # e.g., preprocess_data(X, y)
                 if isinstance(stmt.value, ast.Call):
                     func_name = self.get_func_name(stmt.value.func)
                     if func_name in self.tasks:
@@ -111,6 +99,15 @@ class WorkflowSerializer(ast.NodeVisitor):
                             'outputs': [],
                             'inputs': self.get_call_args(stmt.value)
                         })
+
+    def extract_targets(self, targets):
+        extracted = []
+        for t in targets:
+            if isinstance(t, ast.Name):
+                extracted.append(t.id)
+            elif isinstance(t, ast.Tuple):
+                extracted.extend(self.extract_targets(t.elts))
+        return extracted
 
     def get_func_name(self, func):
         if isinstance(func, ast.Name):
@@ -171,7 +168,7 @@ def deserialize_data(data_bytes):
                 # Retrieve from MinIO
                 code_line = f"""
 # Retrieve argument: {arg_name}
-response = minio_client.get_object('{{execution_id}}', '{arg_name}')
+response = minio_client.get_object('{self.execution_id}', '{arg_name}')
 data_bytes = response.read()
 {arg_name} = deserialize_data(data_bytes)
 print(f"Loaded argument '{arg_name}'")
@@ -192,7 +189,7 @@ print(f"Loaded argument '{arg_name}'")
                 result_storage_lines.append(f"""
 # Serialize and store the result
 data_stream, length, content_type = serialize_data({output_var})
-minio_client.put_object('{{execution_id}}', '{output_var}', data_stream, length, content_type=content_type)
+minio_client.put_object('{self.execution_id}', '{output_var}', data_stream, length, content_type=content_type)
 print({output_var})
                 """.strip())
             else:
@@ -203,12 +200,9 @@ print({output_var})
                     result_storage_lines.append(f"""
 # Serialize and store '{output_var}'
 data_stream, length, content_type = serialize_data({output_var})
-minio_client.put_object('{{execution_id}}', '{output_var}', data_stream, length, content_type=content_type)
+minio_client.put_object('{self.execution_id}', '{output_var}', data_stream, length, content_type=content_type)
 print({output_var})
                     """.strip())
-        else:
-            # No outputs
-            pass
 
         # Combine all code components
         code_lines = [
@@ -219,7 +213,7 @@ print({output_var})
             "# Initialize MinIO client",
             "minio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)",
             "# Create bucket if it does not exist",
-            "execution_id = '{execution_id}'",
+            f"execution_id = '{self.execution_id}'",
             "buckets = [bucket.name for bucket in minio_client.list_buckets()]",
             "if execution_id not in buckets: minio_client.make_bucket(execution_id)",
             "# Serialization functions",
@@ -241,13 +235,25 @@ print({output_var})
             outputs = task['outputs']
             # Update task outputs in self.tasks
             self.tasks[function_name]['outputs'] = outputs
-            function_code = self.tasks[function_name]['code']
             code_to_execute = self.generate_code_to_execute(function_name, inputs, outputs)
             self.tasks[function_name]['code_to_execute'] = code_to_execute
 
+    def serialize_workflow(self):
+        # Build the JSON representation
+        workflow_json = {
+            'workflow': {
+                'name': self.current_workflow,
+                'tasks': self.task_order,
+            },
+            'tasks': self.tasks,
+            'imports': self.imports,
+            'execution_id': str(self.execution_id),
+        }
+        return workflow_json
+
 def main():
     # Read the source code from the file
-    with open('california_housing.py', 'r') as f:
+    with open('mnist.py', 'r') as f:
         source_code = f.read()
 
     # Parse the source code into an AST
@@ -258,15 +264,7 @@ def main():
     serializer.visit(tree)
     serializer.main()  # Generate code_to_execute for tasks
 
-    # Build the JSON representation
-    workflow_json = {
-        'workflow': {
-            'name': serializer.current_workflow,
-            'tasks': serializer.task_order,
-        },
-        'tasks': serializer.tasks,
-        'execution_id': str(serializer.execution_id),
-    }
+    workflow_json = serializer.serialize_workflow()
 
     # Output the JSON to a file or print it
     with open('workflow.json', 'w') as f:

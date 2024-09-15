@@ -1,80 +1,116 @@
 {
-  "workflow": {
-    "name": "simple_data_processing_workflow",
-    "tasks": [
-      {
-        "task": "load_data",
-        "outputs": ["data"],
-        "inputs": []
-      },
-      {
-        "task": "preprocess_data",
-        "outputs": [],
-        "inputs": [["data", false]]
-      },
-      {
-        "task": "split_data",
-        "outputs": [],
-        "inputs": [
-          ["X_scaled", false],
-          ["y", false]
+    "workflow": {
+        "name": "mnist_workflow",
+        "tasks": [
+            {
+                "task": "load_data",
+                "outputs": [
+                    "dataset"
+                ],
+                "inputs": []
+            },
+            {
+                "task": "preprocess_data",
+                "outputs": [
+                    "train_loader",
+                    "test_loader"
+                ],
+                "inputs": [
+                    [
+                        "dataset",
+                        false
+                    ]
+                ]
+            },
+            {
+                "task": "train_model",
+                "outputs": [
+                    "model"
+                ],
+                "inputs": [
+                    [
+                        "train_loader",
+                        false
+                    ]
+                ]
+            },
+            {
+                "task": "evaluate_model",
+                "outputs": [
+                    "accuracy"
+                ],
+                "inputs": [
+                    [
+                        "model",
+                        false
+                    ],
+                    [
+                        "test_loader",
+                        false
+                    ]
+                ]
+            }
         ]
-      },
-      {
-        "task": "train_model",
-        "outputs": ["model"],
-        "inputs": [
-          ["X_train", false],
-          ["y_train", false]
-        ]
-      },
-      {
-        "task": "evaluate_model",
-        "outputs": ["mse"],
-        "inputs": [
-          ["model", false],
-          ["X_test", false],
-          ["y_test", false]
-        ]
-      }
-    ]
-  },
-  "tasks": {
-    "load_data": {
-      "name": "load_data",
-      "code": "def load_data() -> List[Tuple[float, float]]:\n    # Simulate loading data: A list of tuples with (input, output) values\n    data = [\n        (1.0, 2.0),\n        (2.0, 4.0),\n        (3.0, 6.0),\n        (4.0, 8.0),\n        (5.0, 10.0),\n    ]\n    return data",
-      "inputs": [],
-      "outputs": ["data"],
-      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n\n# Call the function\nresult = load_data()\n# Store the result(s)\ndata = result\n# Serialize and store the result\ndata_stream, length, content_type = serialize_data(data)\nminio_client.put_object('{execution_id}', 'data', data_stream, length, content_type=content_type)\nprint(data)"
     },
-    "preprocess_data": {
-      "name": "preprocess_data",
-      "code": "def preprocess_data(data: List[Tuple[float, float]]) -> Tuple[List[float], List[float]]:\n    # Preprocess the data: Separate inputs (X) and outputs (y)\n    X = [x for x, _ in data]\n    y = [y for _, y in data]\n    # Basic normalization (scaling) - dividing by the max value\n    max_value = max(X)\n    X_scaled = [x / max_value for x in X]\n    return X_scaled, y",
-      "inputs": ["data"],
-      "outputs": [],
-      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: data\nresponse = minio_client.get_object('{execution_id}', 'data')\ndata_bytes = response.read()\ndata = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'data'\")\n# Call the function\nresult = preprocess_data(data)\n# Store the result(s)\n"
+    "tasks": {
+        "load_data": {
+            "name": "load_data",
+            "code": "def load_data() -> datasets.MNIST:\n    from torchvision import datasets, transforms\n    # Load the MNIST dataset\n    transform = transforms.Compose([\n        transforms.ToTensor(),\n        transforms.Normalize((0.1307,), (0.3081,))\n    ])\n    dataset = datasets.MNIST(root='./data', train=True, download=True, transform=transform)\n    return dataset",
+            "inputs": [],
+            "outputs": [
+                "dataset"
+            ],
+            "container_image": "intel/deep-learning:2024.2-py3.10",
+            "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n\n# Call the function\nresult = load_data()\n# Store the result(s)\ndataset = result\n# Serialize and store the result\ndata_stream, length, content_type = serialize_data(dataset)\nminio_client.put_object('10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a', 'dataset', data_stream, length, content_type=content_type)\nprint(dataset)"
+        },
+        "preprocess_data": {
+            "name": "preprocess_data",
+            "code": "def preprocess_data(dataset: datasets.MNIST) -> Tuple[DataLoader, DataLoader]:\n    from torch.utils.data import DataLoader, random_split\n    # Split the dataset into train and test sets\n    train_size = int(0.8 * len(dataset))\n    test_size = len(dataset) - train_size\n    train_dataset, test_dataset = random_split(dataset, [train_size, test_size])\n\n    # Create data loaders\n    train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)\n    test_loader = DataLoader(test_dataset, batch_size=1000, shuffle=False)\n\n    return train_loader, test_loader",
+            "inputs": [
+                "dataset"
+            ],
+            "outputs": [
+                "train_loader",
+                "test_loader"
+            ],
+            "container_image": "intel/deep-learning:2024.2-py3.10",
+            "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: dataset\nresponse = minio_client.get_object('10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a', 'dataset')\ndata_bytes = response.read()\ndataset = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'dataset'\")\n# Call the function\nresult = preprocess_data(dataset)\n# Store the result(s)\ntrain_loader, test_loader = result\n# Serialize and store 'train_loader'\ndata_stream, length, content_type = serialize_data(train_loader)\nminio_client.put_object('10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a', 'train_loader', data_stream, length, content_type=content_type)\nprint(train_loader)\n# Serialize and store 'test_loader'\ndata_stream, length, content_type = serialize_data(test_loader)\nminio_client.put_object('10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a', 'test_loader', data_stream, length, content_type=content_type)\nprint(test_loader)"
+        },
+        "train_model": {
+            "name": "train_model",
+            "code": "def train_model(train_loader: DataLoader) -> Dict[str, torch.Tensor]:\n    class Net(nn.Module):\n        def __init__(self):\n            super(Net, self).__init__()\n            self.fc1 = nn.Linear(28 * 28, 128)\n            self.fc2 = nn.Linear(128, 64)\n            self.fc3 = nn.Linear(64, 10)\n\n        def forward(self, x):\n            x = x.view(-1, 28 * 28)\n            x = torch.relu(self.fc1(x))\n            x = torch.relu(self.fc2(x))\n            return self.fc3(x)\n    \n    model = Net()\n    criterion = nn.CrossEntropyLoss()\n    optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.5)\n\n    for epoch in range(2):  # 5 epochs for demonstration\n        for batch_idx, (data, target) in enumerate(train_loader):\n            optimizer.zero_grad()\n            output = model(data)\n            loss = criterion(output, target)\n            loss.backward()\n            optimizer.step()\n\n            if batch_idx % 100 == 0:\n                print(f'Epoch {epoch}: [{batch_idx * len(data)}/{len(train_loader.dataset)}]'\n                      f'\\tLoss: {loss.item():.6f}')\n\n    return model.state_dict()",
+            "inputs": [
+                "train_loader"
+            ],
+            "outputs": [
+                "model"
+            ],
+            "container_image": "intel/deep-learning:2024.2-py3.10",
+            "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: train_loader\nresponse = minio_client.get_object('10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a', 'train_loader')\ndata_bytes = response.read()\ntrain_loader = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'train_loader'\")\n# Call the function\nresult = train_model(train_loader)\n# Store the result(s)\nmodel = result\n# Serialize and store the result\ndata_stream, length, content_type = serialize_data(model)\nminio_client.put_object('10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a', 'model', data_stream, length, content_type=content_type)\nprint(model)"
+        },
+        "evaluate_model": {
+            "name": "evaluate_model",
+            "code": "def evaluate_model(state_dict: Dict[str, torch.Tensor], test_loader: DataLoader) -> float:\n    class Net(nn.Module):\n        def __init__(self):\n            super(Net, self).__init__()\n            self.fc1 = nn.Linear(28 * 28, 128)\n            self.fc2 = nn.Linear(128, 64)\n            self.fc3 = nn.Linear(64, 10)\n\n        def forward(self, x):\n            x = x.view(-1, 28 * 28)\n            x = torch.relu(self.fc1(x))\n            x = torch.relu(self.fc2(x))\n            return self.fc3(x)\n    \n    model = Net()\n    model.load_state_dict(state_dict)  # Load the trained parameters\n    test_loss = 0\n    correct = 0\n    with torch.no_grad():\n        for data, target in test_loader:\n            output = model(data)\n            test_loss += nn.functional.cross_entropy(output, target, reduction='sum').item()\n            pred = output.argmax(dim=1, keepdim=True)\n            correct += pred.eq(target.view_as(pred)).sum().item()\n\n    test_loss /= len(test_loader.dataset)\n    accuracy = correct / len(test_loader.dataset)\n\n    print(f'Test set: Average loss: {test_loss:.4f}, Accuracy: {accuracy:.2f}')\n    return accuracy",
+            "inputs": [
+                "state_dict",
+                "test_loader"
+            ],
+            "outputs": [
+                "accuracy"
+            ],
+            "container_image": "intel/deep-learning:2024.2-py3.10",
+            "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: model\nresponse = minio_client.get_object('10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a', 'model')\ndata_bytes = response.read()\nmodel = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'model'\")\n# Retrieve argument: test_loader\nresponse = minio_client.get_object('10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a', 'test_loader')\ndata_bytes = response.read()\ntest_loader = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'test_loader'\")\n# Call the function\nresult = evaluate_model(model, test_loader)\n# Store the result(s)\naccuracy = result\n# Serialize and store the result\ndata_stream, length, content_type = serialize_data(accuracy)\nminio_client.put_object('10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a', 'accuracy', data_stream, length, content_type=content_type)\nprint(accuracy)"
+        }
     },
-    "split_data": {
-      "name": "split_data",
-      "code": "def split_data(X: List[float], y: List[float]) -> Tuple[List[float], List[float], List[float], List[float]]:\n    # Split data into train/test sets (80/20 split)\n    split_index = int(len(X) * 0.8)\n    X_train, X_test = X[:split_index], X[split_index:]\n    y_train, y_test = y[:split_index], y[split_index:]\n    return X_train, X_test, y_train, y_test",
-      "inputs": ["X", "y"],
-      "outputs": [],
-      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: X_scaled\nresponse = minio_client.get_object('{execution_id}', 'X_scaled')\ndata_bytes = response.read()\nX_scaled = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'X_scaled'\")\n# Retrieve argument: y\nresponse = minio_client.get_object('{execution_id}', 'y')\ndata_bytes = response.read()\ny = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'y'\")\n# Call the function\nresult = split_data(X_scaled, y)\n# Store the result(s)\n"
-    },
-    "train_model": {
-      "name": "train_model",
-      "code": "def train_model(X_train: List[float], y_train: List[float]) -> Tuple[float, float]:\n    # Train a simple linear model: y = a * x + b\n    # For simplicity, assume b = 0, so y = a * x\n    # Calculate 'a' as the ratio of mean of y to mean of X\n    a = sum(y_train) / sum(X_train) if sum(X_train) != 0 else 0\n    return a, 0",
-      "inputs": ["X_train", "y_train"],
-      "outputs": ["model"],
-      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: X_train\nresponse = minio_client.get_object('{execution_id}', 'X_train')\ndata_bytes = response.read()\nX_train = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'X_train'\")\n# Retrieve argument: y_train\nresponse = minio_client.get_object('{execution_id}', 'y_train')\ndata_bytes = response.read()\ny_train = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'y_train'\")\n# Call the function\nresult = train_model(X_train, y_train)\n# Store the result(s)\nmodel = result\n# Serialize and store the result\ndata_stream, length, content_type = serialize_data(model)\nminio_client.put_object('{execution_id}', 'model', data_stream, length, content_type=content_type)\nprint(model)"
-    },
-    "evaluate_model": {
-      "name": "evaluate_model",
-      "code": "def evaluate_model(model: Tuple[float, float], X_test: List[float], y_test: List[float]) -> float:\n    # Evaluate the model: calculate mean squared error\n    a, b = model\n    y_pred = [a * x + b for x in X_test]\n    mse = sum((y_true - y_pred) ** 2 for y_true, y_pred in zip(y_test, y_pred)) / len(y_test)\n    print(f\"Mean Squared Error: {mse}\")\n    return mse",
-      "inputs": ["model", "X_test", "y_test"],
-      "outputs": ["mse"],
-      "code_to_execute": "# Code to execute\nfrom minio import Minio\nimport io\nimport pickle\n# Initialize MinIO client\nminio_client = Minio('minio-service:9000', access_key='minio', secret_key='minio123', secure=False)\n# Create bucket if it does not exist\nexecution_id = '{execution_id}'\nbuckets = [bucket.name for bucket in minio_client.list_buckets()]\nif execution_id not in buckets: minio_client.make_bucket(execution_id)\n# Serialization functions\ndef serialize_data(data):\n    import io\n    import pickle\n    data_bytes = pickle.dumps(data)\n    data_stream = io.BytesIO(data_bytes)\n    length = len(data_bytes)\n    content_type = 'application/octet-stream'\n    return data_stream, length, content_type\n\ndef deserialize_data(data_bytes):\n    import pickle\n    data = pickle.loads(data_bytes)\n    return data\n# Retrieve arguments\n# Retrieve argument: model\nresponse = minio_client.get_object('{execution_id}', 'model')\ndata_bytes = response.read()\nmodel = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'model'\")\n# Retrieve argument: X_test\nresponse = minio_client.get_object('{execution_id}', 'X_test')\ndata_bytes = response.read()\nX_test = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'X_test'\")\n# Retrieve argument: y_test\nresponse = minio_client.get_object('{execution_id}', 'y_test')\ndata_bytes = response.read()\ny_test = deserialize_data(data_bytes)\nprint(f\"Loaded argument 'y_test'\")\n# Call the function\nresult = evaluate_model(model, X_test, y_test)\n# Store the result(s)\nmse = result\n# Serialize and store the result\ndata_stream, length, content_type = serialize_data(mse)\nminio_client.put_object('{execution_id}', 'mse', data_stream, length, content_type=content_type)\nprint(mse)"
-    }
-  },
-  "execution_id": "52f10f60-522f-4e78-86db-e385daa4a79d"
+    "imports": [
+        "import torch",
+        "import torch.nn as nn",
+        "import torch.optim as optim",
+        "from torch.utils.data import DataLoader",
+        "from torchvision import datasets",
+        "from typing import Dict, Tuple, List",
+        "from torchvision import datasets, transforms",
+        "from torch.utils.data import DataLoader, random_split"
+    ],
+    "execution_id": "10e4923b-d0a7-4aec-9b3a-ef010a4c4a3a"
 }
