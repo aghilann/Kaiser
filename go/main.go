@@ -10,6 +10,8 @@ func main() {
 
     r.GET("/hello", handlers.HelloHandler)
     r.POST("/echo", handlers.EchoHandler)
+    r.POST("/workflow", handlers.ScheduleWorkflow)
+    r.POST("/workflow/topological-order", handlers.GetTopologicalOrder)
 
     r.Run(":8080")
 }
